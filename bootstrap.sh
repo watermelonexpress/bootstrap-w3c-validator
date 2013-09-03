@@ -12,9 +12,6 @@ make
 make install
 ldconfig
 
-yes | perl -MCPAN -e "install Config::General"
-yes | perl -MCPAN -e "install Bundle::W3C::Validator"
-
 cd ~/src
 wget http://validator.w3.org/validator.tar.gz http://validator.w3.org/sgml-lib.tar.gz
 tar -xzf validator.tar.gz
@@ -28,3 +25,6 @@ mv validator-1.1/htdocs/sgml-lib /usr/local/validator/htdocs/
 mkdir -p /etc/w3c
 cp /usr/local/validator/htdocs/config/* /etc/w3c/
 
+perl -MCPAN -e "install Config::General"
+
+#perl -MCPAN -e "install Bundle::W3C::Validator"
