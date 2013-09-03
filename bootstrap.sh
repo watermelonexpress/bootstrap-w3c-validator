@@ -25,6 +25,6 @@ mv validator-1.1/htdocs/sgml-lib /usr/local/validator/htdocs/
 mkdir -p /etc/w3c
 cp /usr/local/validator/htdocs/config/* /etc/w3c/
 
-perl -MCPAN -e "install Config::General"
-
-#perl -MCPAN -e "install Bundle::W3C::Validator"
+echo 'Manually run the following commands and when prompted for a url enter: http://www.cpan.org'
+echo 'sudo perl -MCPAN -e "install Config::General"'
+echo 'sudo perl -MCPAN -e "install Bundle::W3C::Validator"'
