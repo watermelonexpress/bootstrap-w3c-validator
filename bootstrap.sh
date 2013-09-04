@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 yum groupinstall -y "Development Tools"
-yum install -y kernel-devel kernel-headers gcc libxml2 libxml2-devel zlib-devel opensp-devel perl-CPAN
+yum install -y kernel-devel kernel-headers gcc libxml2 libxml2-devel zlib-devel opensp-devel perl-SGML-Parser-OpenSP perl-CPAN
 
 mkdir -p ~/src
 cd ~/src
@@ -28,3 +28,5 @@ cp /usr/local/validator/htdocs/config/* /etc/w3c/
 echo 'Manually run the following commands and when prompted for a url enter: http://www.cpan.org'
 echo 'sudo perl -MCPAN -e "install Config::General"'
 echo 'sudo perl -MCPAN -e "install Bundle::W3C::Validator"'
+
+#SGML::Parser::OpenSP
